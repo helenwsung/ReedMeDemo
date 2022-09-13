@@ -7,6 +7,9 @@ usethis::use_git_config(user.name = "helenwsung", user.email = "hwsung@hawaii.ed
 usethis::create_github_token() 
 ## in case usethis version < 2.0.0: usethis::browse_github_token() (or even better: update usethis!)
 
+##You could even get out ahead of this and store the PAT explicitly right now. In R, call gitcreds::gitcreds_set() to get a prompt where you can paste your PAT:
+gitcreds::gitcreds_set()
+
 ## set personal access token:
 credentials::set_github_pat("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")
 
